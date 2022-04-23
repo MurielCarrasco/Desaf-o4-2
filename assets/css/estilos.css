@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Karma:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: "kalam";
+}
+
+a{
+    text-decoration: none;
+    color: #B34D54
+}
+body{
+    background-color: bisque ;
+}
+
+/* menú de la página*/
+.logo{
+    width: 100px;
+    padding: 5px;
+}
+.logo img{
+    width: 100%;
+    
+}
+.menu{
+    background-color: white;
+    color: #D05961;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.listaMenu{
+    list-style: none;
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.listaMenu:hover{
+    transform: scale(1.1);
+}
+.redireccion{
+    display: inline-block;
+    font-size: 18px;
+}
+.carroCompra button{
+    height: 50px;
+}
+
+/*encabezado*/
+header{
+    background-image: url(../img/foto-header.jpg);
+    height:450px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    color:#8E9FFA;
+    font-size: 30px;
+}
+
+/*edición del main*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%;
+    grid-template-rows: repeat(9,1fr);
+    grid-template-areas: "categoria tecnologia tecnologia tecnologia "
+                         "categoria tecnologia tecnologia tecnologia "
+                         "categoria tecnologia tecnologia tecnologia "
+                         "categoria tecnologia tecnologia tecnologia "
+                         "categoria tecnologia tecnologia tecnologia "
+                         "categoria tecnologia tecnologia tecnologia "
+                         "categoria tecnologia tecnologia tecnologia "
+                         "categoria tecnologia tecnologia tecnologia "
+                         "categoria tecnologia tecnologia tecnologia ";
+}
+.categoria{
+    grid-area: categoria;
+}
+.categoria:hover{
+    transform: scale(1.1);
+}
+ul{
+    list-style: none;
+}
+ul li{
+    color: #D05961;
+    font-family: "kalam";
+    font-weight: 500;
+    width: 15%;
+    margin: 30px;
+    display: inline-block;
+    position: relative;
+}
+.tecnologia{
+    grid-area: tecnologia;
+}
+.tarjeta{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px; 
+    padding: 50px;
+    margin: 30px;
+    border-style: outset;
+    display: inline-block;
+}
+.tarjeta__img{
+    width: 100%; 
+}
+.tarjeta__titulo{
+    text-align: center;
+}
+.boton{
+    width: 100px;
+    background-color: bisque;
+    border: 0;
+    border-radius: 10px;
+    color: #D05961;
+}
+.boton:hover{
+    transform: scale(1.2);
+}
+h1{
+    color: #D95961;
+    font-family: "kalam";
+}
+h2{
+    color: #B34950;
+    font-family: "kalam";
+    width: 100%;
+    text-align: center;
+}
+h3{
+    color: #D05961;
+    font-family: "kalam";
+}
+p{
+    color: #D05961;
+    font-family: "kalam";
+    font-size: 16px ;
+    text-align: center;
+}
+.Parrafo{
+    text-align: center;
+}
+
+/*edicion del footer*/
+footer{
+    font-family: "kalam";
+    font-weight: 700;
+    color: #B34D54;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+}
+footer img{
+    width: 40px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.pie{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 35px 35px ;
+    grid-template-areas: "contacto . redes"
+                         "contacto . redes";
+}
+.redes{
+    grid-area: redes;
+}
+.subtitulo{
+    text-align: center;
+}
+.contacto{
+    grid-area: contacto;
+    color: #D05961;
+    font-family: "kalam";
+    
+}
+
+/* edición de la segunda página "compra.html"*/
+
+.promociones{
+    display: grid;
+    grid-template-columns: 30% 70% ;
+    grid-template-rows: 50px 400px 400px 400px 400px 400px 400px ;
+    grid-template-areas: "titulo  titulo"
+                         "fotoA   infoA"
+                         "usoA    usoA"
+                         "fotoB   infoB"
+                         "usoB    usoB"
+                         "fotoC   infoC"
+                         "usoC    usoC";
+    justify-items: center;
+}
+.tituloPromo{
+    grid-area: titulo;
+    font-size: 35px;
+}
+.infoLumi{
+    grid-area: fotoA;
+}
+.contenidoLumi{
+    grid-area: infoA;
+}
+.usoLumi{
+    grid-area: usoA;
+}
+.infoFacial{
+    grid-area: fotoB;
+}
+.contenidoFacial{
+    grid-area: infoB;
+}
+.usoFacial{
+    grid-area: usoB;
+}
+.infoGeles{
+    grid-area: fotoC;
+}
+.contenidoGeles{
+    grid-area: infoC;
+}
+.usoGeles{
+    grid-area: usoC;
+}
+.usoFacial, .usoGeles, .usoLumi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenidoLumi, .contenidoFacial, .contenidoGeles{
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.texto{
+    font-size: 30px;
+}
+.infoLumi, .infoFacial, .infoGeles{
+    display: flex;
+    justify-content: center;
+}
+.infoLumi, .infoFacial, .infoGeles img{
+    height: 80%;
+}
+.promociones h3{
+    font-size: 30px;
+    text-align: center;
+}
+.video{
+    margin-top: 50px;
+}
+
+
+
+/*edicion páginas "confirmcacióncompra.html" , "inscripción.html" y "registro" */
+.datos{
+    margin: 100px 500px;
+    font-family: "kalam";
+    color:#B34D54;
+    display: flex;     
+    flex-direction: column; 
+    justify-content: center;
+    height: 400px;
+}
+.datos input:focus{
+    width: 450px;
+}
+.btn{
+    border: 0px;
+    padding: 10px; 
+    background-color:#B34950; 
+    color:white; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: "kalam", sans-serif; 
+    border-radius: 50px;
+    margin: 30px;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.tabla{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 200px  40px;
+    grid-template-areas: "tabla "
+                         "boton";
+    justify-items: center;
+}
+.tablaPago{
+    grid-area: tabla;
+    font-family: "kalam";
+    color: #D05961;
+    font-size: 30px;
+}
+.botonTabla{
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+}
+.botonPago, .botonRegistro, .botonSubtitulo{
+    display: flex;
+    justify-content: center;
+}
+.textoRegistro{
+    text-align: center;
+    font-size: 20px;
+}
+.margenes{
+    padding-right: 20px
+}
+.cantidad{
+    text-align: center;
+}
+
+/*ediciones para teléfonos */
+@media ( max-width:480px){
+    .menu{
+        height: 100%;
+        flex-direction: column;
+    }
+    .listaMenu{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-start;
+    }
+    .listaMenu li {
+        width: 100%;
+    }
+    header{
+        height:200px;
+        font-size: 15px;
+        width: 100%;
+    }
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 20px 1fr 1fr 1fr;
+        grid-template-areas: "categoria "
+                             "  .       "
+                             "tecnologia"
+                             "tecnologia"
+                             "tecnologia";
+    }
+    .categoria ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    ul{
+        list-style: none;
+    }
+    ul li{
+        margin: 10px;
+        display: inline ;
+        position: relative;
+        align-content: center;
+        font-size: 10px;
+    }
+    .tecnologia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarjeta{
+        border-radius: 5px; 
+        padding: 25px;
+        margin: 10px;
+    }
+    p{
+        font-size: 12px ;
+    }
+    footer{
+        padding: 10px;
+    }
+    footer img{
+        padding: 5px;
+        margin: 5px;
+        display:inline-block;
+    }
+    .pie{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "contacto"
+                             "redes";
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .subtitulo{
+        text-align: center;
+        margin: 10px;
+    }
+    
+    /* ediciones adicionales página "compra.html" */
+
+    .promociones{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(10,auto);
+        grid-template-areas: "titulo"
+                             "fotoA "  
+                             "infoA"
+                             "usoA "   
+                             "fotoB "  
+                             "infoB"
+                             "usoB "   
+                             "fotoC "  
+                             "infoC"
+                             "usoC ";
+        justify-items: center;
+    }
+    .tituloPromo{
+        font-size: 15px;
+    }
+    .contenidoLumi, .contenidoFacial, .contenidoGeles{
+        width: 70%;
+        margin: 10px;
+    }
+    .texto{
+        font-size: 1rem;
+    }
+    .infoLumi, .infoFacial, .infoGeles{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .promociones h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .video{
+        width: 100%; 
+    }
+    .usoLumi h3, .usoFacial h3, .usoGeles h3{
+        font-size: 16px;
+        align-items: center;
+    }
+    /*ediciones de páginas inscripción, registro y confirmación */
+    .datos{
+        margin: 30px;
+    }
+    .datos input:focus{
+        width: 400px;
+    }
+    .tablaPago{
+        font-size: 20px;
+    }
+    .datosInscripcion{
+        height: 800px;
+    }
+}
+

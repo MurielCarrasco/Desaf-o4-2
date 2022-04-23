@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+
+    <section class="menu">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/img/logo.png" alt=""> </a>
+        </div>
+        <nav>
+            <ul class="listaMenu">
+                <li class="redireccion"><a href="./index.html">Inicio</a></li>
+                <li class="redireccion"><a href="./compra.html">Promociones</a></li>
+                <li class="redireccion"><a href="./registro.html">iniciar Sesión</a></li>
+                <li class="redireccion"><a href="./inscripcion.html">Inscribirse</a></li>
+            </ul>
+        </nav>
+        <form action="">
+            <input type="search" name="nombre" placeholder="buscar..." class="buscador">
+            <button >buscar</button>
+        </form>
+        <div class="carroCompra">
+            <button> <img src="./assets/img/carro-compra.jpg" alt=""></button>
+        </div>
+    </section>
+
+    <main>
+        <form method="post" class="datos">
+            <label for="mail">Mail</label>
+            <input type="email" name="Mail">
+            <label for="Contraseña">Contraseña</label>
+            <input type="password" name="Contraseña">
+            <a href=""> Has olvidado tu Contraseña ? </a>
+        </form>
+
+        <div class="botonRegistro">
+            <button class="btn">Iniciar Sesión</button>
+        </div>
+
+        <h3 class="textoRegistro"> No te has registrado aún ? </h3>
+
+        <div class="botonSubtitulo">
+            <button class="btn"> <a href="./inscripcion.html" class="btn">Registrarme</a></button> <!--aquí tuve que poner class en <buton> y <a> tenian ediciones distintas y chocaban-->
+        </div>
+
+        <p class="textoRegistro">Registrate y disfruta de todos los beneficios que tenemos para ti !</p>
+    </main>  
+    
+    <!--footer: pie de página + redes sociales-->
+    <footer class="pie">
+        <div class="contacto">
+            <a href="./index.html">Conocenos</a>
+            <a href="./index.html">Labor Social</a>
+            <a href="./index.html">Servicio al cliente</a>
+        </div>
+        
+        <div class="redes">
+            <h2 class="subtitulo"> Conectate</h2>
+            <a href="https://www.facebook.com"> <img src="./assets/img/rrss/Facebook.jpg" alt=""></a>
+            <a href="https://www.instagram.com"> <img src="./assets/img/rrss/Instagram.jpg" alt=""> </a>
+            <a href="https://www.pinterest.cl"> <img src="./assets/img/rrss/Pinterest.jpg" alt=""></a>
+            <a href="https://www.twitter.com"> <img src="./assets/img/rrss/Twitter.jpg" alt=""></a>
+            <a href="https://www.youtube.com"> <img src="./assets/img/rrss/Youtube.jpg" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

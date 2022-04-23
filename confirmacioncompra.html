@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmacion</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+    <section class="menu">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/img/logo.png" alt=""> </a>
+        </div>
+        <nav>
+            <ul class="listaMenu">
+                <li class="redireccion"><a href="./index.html">Inicio</a></li>
+                <li class="redireccion"><a href="./compra.html">Promociones</a></li>
+                <li class="redireccion"><a href="./registro.html">Iniciar Sesión</a></li>
+                <li class="redireccion"><a href="./inscripcion.html">Inscribirse</a></li>
+            </ul>
+        </nav>
+        <form action="">
+            <input type="search" name="nombre" placeholder="buscar..." class="buscador">
+            <button>buscar</button>
+        </form>
+        <div class="carroCompra">
+            <button> <img src="./assets/img/carro-compra.jpg" alt=""></button>
+        </div>
+    </section>
+
+
+    <!--Tabla de pago-->
+    <main class="tabla">
+        <section class="tablaPago">
+            <table borde="2" cellpadding="15">
+                <tr class="margenes">
+                    <th>Código  </th>
+                    <th>Producto  </th>
+                    <th>Cantidad  </th>
+                    <th>Precio  </th>
+                </tr>
+
+                <tr class="margenes">
+                    <td>000093</td>
+                    <td>Lumispa</td>
+                    <td class="cantidad">1</td>
+                    <td> $ 250.000</td>
+                </tr>
+
+                <tr class="margenes">
+                    <td>000076</td>
+                    <td>Face Wash</td>
+                    <td class="cantidad">1</td>
+                    <td> $   0</td>
+                </tr>
+
+                <tr class="margenes">
+                    <td>000099</td>
+                    <td>Despacho</td>
+                    <td class="cantidad">1</td>
+                    <td>$ 5.000</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <th></th>
+                    <td></td>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <th>TOTAL</th>
+                    <td>-</td>
+                    <th>$ 255.000</th>
+                </tr>
+            
+            </table>
+        </section>
+    </main>
+    <div class="botonTabla">
+        <button class="btn">Confirmar</button>
+    </div>
+    <!--Formulario para despacho-->
+    <h2>Datos de envío</h2>
+
+    <form action=""  method="post" class="datos">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre">
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="Apellido">
+        <label for="Dirección">Dirección</label>
+        <input type="text" name="Dirección">
+        <label for="Comuna">Comuna</label>
+        <input type="text" name="Comuna">
+        <label for="Región">Región</label>
+        <input type="text" name="Región">
+        <label for="comentario">Comentario (opcional)</label>
+        <textarea name="comentario"></textarea>
+
+        <input type="submit" value="Confirmar" class="btn">
+
+    </form>
+
+    <!--Formulario de pago-->
+    <h2>Metodo de pago</h2>
+
+        <form action="" method="post" class="datos">
+            <select name="Método de pago" class="btn">
+                <option value="visa">visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="webpay">Webpay</option>
+            </select>
+
+        </form>
+
+        <div class="botonPago">
+            <button class="btn">Confirmar</button>
+        </div>
+
+    <!--footer: pie de página + redes sociales-->
+    <footer class="pie">
+        <div class="contacto">
+            <a href="./index.html">Conocenos</a>
+            <a href="./index.html">Labor Social</a>
+            <a href="./index.html">Servicio al cliente</a>
+        </div>
+        
+        <div class="redes">
+            <h2 class="subtitulo"> Conectate</h2>
+            <a href="https://www.facebook.com"> <img src="./assets/img/rrss/Facebook.jpg" alt=""></a>
+            <a href="https://www.instagram.com"> <img src="./assets/img/rrss/Instagram.jpg" alt=""> </a>
+            <a href="https://www.pinterest.cl"> <img src="./assets/img/rrss/Pinterest.jpg" alt=""></a>
+            <a href="https://www.twitter.com"> <img src="./assets/img/rrss/Twitter.jpg" alt=""></a>
+            <a href="https://www.youtube.com"> <img src="./assets/img/rrss/Youtube.jpg" alt=""></a>
+        </div>
+    </footer>
+
+</body>
+</html>
