@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+    <section class="menu">
+        <div class="logo">
+            <a href="./index.html"> <img src="./assets/img/logo.png" alt=""> </a>
+        </div>
+        <nav>
+            <ul class="listaMenu">
+                <li class="redireccion"><a href="./index.html">Inicio</a></li>
+                <li class="redireccion"><a href="./compra.html">Promociones</a></li>
+                <li class="redireccion"><a href="./registro.html">Iniciar Sesión</a></li>
+                <li class="redireccion"><a href="./inscripcion.html">Inscribirse</a></li>
+            </ul>
+        </nav>
+        <form action="">
+            <input type="search" name="nombre" placeholder="buscar..." class="buscador">
+            <button>buscar</button>
+        </form>
+        <div class="carroCompra">
+            <button> <img src="./assets/img/carro-compra.jpg" alt=""></button>
+        </div>
+    </section>
+
+<!--formulario de inscripción-->
+    <form method="post" class="datos datosInscripcion">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre">
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="Apellido">
+        <label for="Dirección">Dirección</label>
+        <input type="text" name="Dirección">
+        <label for="Comuna">Comuna</label>
+        <input type="text" name="Comuna">
+        <label for="Región">Región</label>
+        <input type="text" name="Región">
+        <label for="mail">Mail</label>
+        <input type="email" name="Mail">
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" name="Contraseña">
+
+        <label for="Socio">Socio</label>
+        <input type="radio" name="cuenta" value="Socio" id="Socio">
+        <label for="Cliente">Cliente</label>
+        <input type="radio" name="cuenta" value="Cliente" id="Cliente">
+
+        <p>Acepta términos y condiciones</p>
+        <input type="checkbox" name="acepta" value="1"/>
+
+        <button class="btn">Crear cuenta</button>
+    </form>
+
+
+    <!--footer: pie de página + redes sociales-->
+    <footer class="pie">
+        <div class="contacto">
+            <a href="./index.html">Conocenos</a>
+            <a href="./index.html">Labor Social</a>
+            <a href="./index.html">Servicio al cliente</a>
+        </div>
+        
+        <div class="redes">
+            <h2 class="subtitulo"> Conectate</h2>
+            <a href="https://www.facebook.com"> <img src="./assets/img/rrss/Facebook.jpg" alt=""></a>
+            <a href="https://www.instagram.com"> <img src="./assets/img/rrss/Instagram.jpg" alt=""> </a>
+            <a href="https://www.pinterest.cl"> <img src="./assets/img/rrss/Pinterest.jpg" alt=""></a>
+            <a href="https://www.twitter.com"> <img src="./assets/img/rrss/Twitter.jpg" alt=""></a>
+            <a href="https://www.youtube.com"> <img src="./assets/img/rrss/Youtube.jpg" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
