@@ -5,76 +5,45 @@
     padding: 0%;
     font-family: "kalam";
 }
-
 a{
     text-decoration: none;
     color: #B34D54
 }
-body{
-    background-color: bisque ;
-}
-
-/* menú de la página*/
-.logo{
-    width: 100px;
-    padding: 5px;
-}
-.logo img{
-    width: 100%;
-    
-}
-.menu{
+.navbar{
+    height: 80px;
     background-color: white;
-    color: #D05961;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    font-family: "kalam", sans-serif; 
+    color: #B34D54;
 }
-.listaMenu{
-    list-style: none;
-    width: 650px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.listaMenu:hover{
-    transform: scale(1.1);
-}
-.redireccion{
-    display: inline-block;
-    font-size: 18px;
-}
-.carroCompra button{
-    height: 50px;
-}
+.navbar-brand{
+    width: 90px;
 
-/*encabezado*/
-header{
-    background-image: url(../img/foto-header.jpg);
-    height:450px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
-    color:#8E9FFA;
-    font-size: 30px;
 }
-
-/*edición del main*/
-
-ul{
-    list-style: none;
+.form-control{
+    height: 40px;
+    margin-top: 10px;
 }
-ul li{
-    color: #D05961;
-    font-family: "kalam";
-    font-weight: 500;
-    width: 15%;
+.btn{
+    border: 0px;
+    padding: 10px; 
+    background-color:rgb(229, 148, 145); 
+    color:white; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: "kalam", sans-serif; 
+    border-radius: 50px;
     margin: 30px;
-    display: inline-block;
-    position: relative;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.categoria, h2, h3, p{
+    font-family: "kalam", sans-serif; 
+    color: #B34D54;
+}
+.nav-link{
+    text-decoration: none;
+    color: #B34D54
 }
 .card{
     background-color: white;
@@ -90,40 +59,7 @@ ul li{
 .tarjeta__titulo{
     text-align: center;
 }
-.btn{
-    border: 0px;
-    padding: 10px; 
-    background-color:#B34950; 
-    color:white; 
-    text-decoration: none; 
-    text-transform: uppercase; 
-    font-family: "kalam", sans-serif; 
-    border-radius: 50px;
-    margin: 30px;
-}
-.btn:hover{
-    transform: scale(1.2);
-}
-h1{
-    color: #D95961;
-    font-family: "kalam";
-}
-h2{
-    color: #B34950;
-    font-family: "kalam";
-    width: 100%;
-    text-align: center;
-}
-h3{
-    color: #D05961;
-    font-family: "kalam";
-}
-p{
-    color: #D05961;
-    font-family: "kalam";
-    font-size: 16px ;
-    text-align: center;
-}
+
 /*edicion del footer*/
 footer{
     font-family: "kalam";
@@ -161,7 +97,7 @@ footer img{
     
 }
 
-/* edición de la segunda página "compra.html"*/
+* edición de la segunda página "compra.html"*
 
 .promociones{
     display: grid;
@@ -250,7 +186,7 @@ footer img{
     height: 350px;
 }
 
-/*edicion páginas "confirmcacióncompra.html" , "inscripción.html" y "registro" */
+*edicion páginas "confirmcacióncompra.html" , "inscripción.html" y "registro" *
 .datos{
     margin: 100px 500px;
     font-family: "kalam";
@@ -328,7 +264,7 @@ footer img{
 }
 
 
-/*ediciones para teléfonos */
+*ediciones para teléfonos *
 @media ( max-width:480px){
     .menu{
         height: 100%;
@@ -397,7 +333,7 @@ footer img{
         margin: 10px;
     }
     
-    /* ediciones adicionales página "compra.html" */
+* ediciones adicionales página "compra.html" *
 
     .promociones{
         display: grid;
@@ -442,7 +378,7 @@ footer img{
         font-size: 16px;
         align-items: center;
     }
-    /*ediciones de páginas inscripción, registro y confirmación */
+    *ediciones de páginas inscripción, registro y confirmación *
     .datos{
         margin: 30px;
     }
@@ -456,4 +392,4 @@ footer img{
         height: 800px;
     }
 }
-
+*/
