@@ -201,20 +201,8 @@ footer img{
 .datos input:focus{
     width: 450px;
 }
-.btn{
-    border: 0px;
-    padding: 10px; 
-    background-color:#B34950; 
-    color:white; 
-    text-decoration: none; 
-    text-transform: uppercase; 
-    font-family: "kalam", sans-serif; 
-    border-radius: 50px;
-    margin: 30px;
-}
-.btn:hover{
-    transform: scale(1.2);
-}
+
+
 .tabla{
     display: grid;
     grid-template-columns:100%;
