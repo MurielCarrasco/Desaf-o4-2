@@ -59,7 +59,9 @@ a{
 .tarjeta__titulo{
     text-align: center;
 }
-
+.card-text{
+    font-size: 20px;
+}
 /*edicion del footer*/
 footer{
     font-family: "kalam";
