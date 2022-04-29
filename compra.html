@@ -5,30 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>compra</title>
+    <link href="./assets/js/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/estilos.css">
     
 </head>
 <body>
-    <section class="menu">
-        <div class="logo">
-           <a href="./index.html" ><img src="./assets/img/logo.png" alt=""> </a>
-        </div>
-        <nav>
-            <ul class="listaMenu">
-                <li class="redireccion"><a href="./index.html">Inicio</a></li>
-                <li class="redireccion"><a href="./compra.html">Promociones</a></li>
-                <li class="redireccion"><a href="./registro.html">Iniciar Sesión</a></li>
-                <li class="redireccion"><a href="./inscripcion.html">Inscribirse</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-waith" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html" ><img src="./assets/img/logo.png" alt=""> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./compra.html">Promociones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="./registro.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Iniciar sesión
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./inscripcion.html">Inscribirse</a>
+              </li>
             </ul>
-        </nav>
-        <form action="">
-            <input type="search" name="nombre" placeholder="buscar..." class="buscador">
-            <button>buscar</button>
-        </form>
-        <div class="carroCompra">
-            <button> <img src="./assets/img/carro-compra.jpg" alt=""></button>
+            <form class="d-flex">
+              <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </section>
+      </nav>
        
         
     <section class="promociones">
@@ -36,7 +47,7 @@
           <h1 class="tituloPromo">Promociones activas</h1>
 
         <div class="infoLumi">
-            <img src="./assets/img/promo-lumi.jpg">
+            <img class="fotoProducto" src="./assets/img/promo-lumi.jpg">
         </div>
         <div class="contenidoLumi">
             <h2>Lumispa</h2>
@@ -44,26 +55,28 @@
             <span>$ 250.000</span>
 
             <a href="./confirmacioncompra.html"agregar al carro> <!--aquí está el link agregado para que diriga a la página de pago ya con este producto agregado, a modo de ejemplo para este desafío-->
-            </button class="boton"> Agregar al carro</button></a>
+            </button class="btn"> Agregar al carro</button></a>
 
             <p class="texto">Llévate un Lumispa con 20% y adicional llevas un facewash de regalo</p>
             <p class="texto">Dispositivo de limpieza facial. En solo 2 minutos obtienes mas de 7 beneficios; limpieza profunda, luminosidad, prevención de los primeros signos del envejecimiento, entre otros.</p>
         </div>
         <div class="usoLumi">
             <h3>Modo de uso Lumispa</h3>
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/2q7OfnGVGkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            <div class="videoUso">
+                <iframe width="500" height="250" src="https://www.youtube.com/embed/2q7OfnGVGkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            </div>
         </div>
 
     <!--Promoción 2-->
         <div class="infoFacial">
-            <img src="./assets/img/promo-facial.jpg">
+            <img class="fotoProducto" src="./assets/img/promo-facial.jpg">
         </div>
 
         <div class="contenidoFacial">
             <h2>Spa Facial</h2>
             <span>$ 280.000</span>
 
-            <button class="boton">Agregar al carro</button> <!--aquí no está agregado el link de la página de pago, y está solo como boton, como dice arriba es solo para ejemplo y que las páginas estén conectadas-->
+            <button class="btn">Agregar al carro</button> <!--aquí no está agregado el link de la página de pago, y está solo como boton, como dice arriba es solo para ejemplo y que las páginas estén conectadas-->
 
             <p class="texto">Llévate un kit Spa Facial y lleva de regalo 3 cajas de mascarillas faciales gratis y adicional llevas un facewash gratis</p>
             <p class="texto">Spa Facial, dispositivo antienvejecimiento, entre sus funciones atenúa arrugas, líneas de expresión, manchas del rostro, reafirma la piel de restro.</p>
@@ -71,29 +84,32 @@
 
         <div class="usoFacial">
             <h3>Modo de uso Spa Facial</h3>
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/g8C-j9PfueQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            <div class="videoUso">
+                <iframe width="500" height="250" src="https://www.youtube.com/embed/g8C-j9PfueQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            </div>
         </div>
 
     <!--Promoción 3-->
         <div class="infoGeles">
-            <img src="./assets/img/promo-geles.jpg">
+            <img class="fotoProducto" src="./assets/img/promo-geles.jpg">
         </div>
 
         <div class="contenidoGeles">
             <h2>Geles de tratamiento</h2>
             <span>Recibe 1 AgeLoc Boost activating serum GRATIS</span>
 
-            <button class="boton">Agregar al carro</button> <!--aquí no está agregado el link de la página de pago, y está solo como boton, como dice arriba es solo para ejemplo y que las páginas estén conectadas-->
+            <button class="btn">Agregar al carro</button> <!--aquí no está agregado el link de la página de pago, y está solo como boton, como dice arriba es solo para ejemplo y que las páginas estén conectadas-->
 
             <p class="texto">Desde el 1 al 30 de Abril llévate 1 AgeLoc Boost activating serum GRATIS en todos los pedidos de MÍNIMO 100VV</p>
             <p class="texto">Este producto puede ser utilizado con o sin el dispositivo Ageloc Boost</p>
         </div>
         <div class="usoGeles">
             <h3>Modo de uso Ageloc Boost activating serum</h3>
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/wNyuhIH03u4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            <div class="videoUso">
+                <iframe width="500" height="250" src="https://www.youtube.com/embed/wNyuhIH03u4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            </div>
         </div>
     </section>
-
 
     <!--footer: pie de página + RRSS-->
     <footer class="pie">
@@ -112,6 +128,6 @@
         </div>
    
     </footer>
-
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
