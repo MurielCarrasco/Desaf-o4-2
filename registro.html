@@ -5,51 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link href="./assets/js/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/estilos.css">
 </head>
 <body>
-
-    <section class="menu">
-        <div class="logo">
-            <a href="./index.html"> <img src="./assets/img/logo.png" alt=""> </a>
-        </div>
-        <nav>
-            <ul class="listaMenu">
-                <li class="redireccion"><a href="./index.html">Inicio</a></li>
-                <li class="redireccion"><a href="./compra.html">Promociones</a></li>
-                <li class="redireccion"><a href="./registro.html">iniciar Sesión</a></li>
-                <li class="redireccion"><a href="./inscripcion.html">Inscribirse</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-waith" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html" ><img src="./assets/img/logo.png" alt=""> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./compra.html">Promociones</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="./registro.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Iniciar sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./inscripcion.html">Inscribirse</a>
+              </li>
             </ul>
-        </nav>
-        <form action="">
-            <input type="search" name="nombre" placeholder="buscar..." class="buscador">
-            <button >buscar</button>
-        </form>
-        <div class="carroCompra">
-            <button> <img src="./assets/img/carro-compra.jpg" alt=""></button>
+            <form class="d-flex">
+              <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </section>
+      </nav>
 
     <main>
-        <form method="post" class="datos">
-            <label for="mail">Mail</label>
-            <input type="email" name="Mail">
-            <label for="Contraseña">Contraseña</label>
-            <input type="password" name="Contraseña">
-            <a href=""> Has olvidado tu Contraseña ? </a>
+        <div class="circulo">
+            <a href="./index.html"> <img src="./assets/img/logo.png" alt=""> </a>
+        </div>
+        <form class="datos">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingrese su e-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <button type="submit" class="btn">iniciar sesión</button>
+
+            <div class="mb-3 form-check">
+                <h3 class="textoRegistro"> No te has registrado aún ? </h3>
+            </div>
+
+             <button type="submit" class="btn" href="./inscripcion.html">Registrarme</button>
         </form>
-
-        <div class="botonRegistro">
-            <button class="btn">Iniciar Sesión</button>
+        <div>
+            <p class="textoRegistro">Registrate y disfruta de todos los beneficios que tenemos para ti !</p>
         </div>
-
-        <h3 class="textoRegistro"> No te has registrado aún ? </h3>
-
-        <div class="botonSubtitulo">
-            <button class="btn"> <a href="./inscripcion.html" class="btn">Registrarme</a></button> <!--aquí tuve que poner class en <buton> y <a> tenian ediciones distintas y chocaban-->
-        </div>
-
-        <p class="textoRegistro">Registrate y disfruta de todos los beneficios que tenemos para ti !</p>
     </main>  
     
     <!--footer: pie de página + redes sociales-->
@@ -69,5 +82,6 @@
             <a href="https://www.youtube.com"> <img src="./assets/img/rrss/Youtube.jpg" alt=""></a>
         </div>
     </footer>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
