@@ -353,9 +353,20 @@ iframe:hover{
         height: 800px;
     }
 }
-@media (max-width:768px){
+@media (max-width:780px){
     .card-text{
         font-size: 18px;
+    }
+    .datos{
+        margin: 100px;
+    }
+    .table{
+        font-size: 18px;
+        margin: 30px;
+        width: 400px;
+    }
+    .navbar{
+        width: 500px;
     }
 }
 
