@@ -297,9 +297,6 @@ iframe:hover{
         text-align: center;
         margin: 10px;
     }
-    
-/* ediciones adicionales página "compra.html" */
-
     .promociones{
         display: grid;
         gap: 10px;
@@ -343,7 +340,6 @@ iframe:hover{
         font-size: 16px;
         align-items: center;
     }
-    /*ediciones de páginas inscripción, registro y confirmación */
     .datos{
         margin: 30px;
     }
