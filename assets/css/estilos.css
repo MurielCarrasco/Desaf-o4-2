@@ -1,373 +1,392 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Karma:wght@300&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Karma:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: "kalam";
+}
 
-*{
-    margin: 0;
-    padding: 0%;
-    font-family: "kalam";
+a {
+  text-decoration: none;
+  color: #B34D54;
 }
-a{
-    text-decoration: none;
-    color: #B34D54
-}
-.navbar{
-    background-color: white;
-    font-family: "kalam", sans-serif; 
-    color: #B34D54;
-}
-.navbar-brand{
-    width: 90px;
 
+.navbar {
+  background-color: white;
+  font-family: "kalam", sans-serif;
+  color: #B34D54;
 }
-.form-control{
-    height: 40px;
-    margin-top: 10px;
+
+.navbar .brand {
+  width: 90px;
 }
-.btn{
-    border: 0px;
-    padding: 10px; 
-    background-color:rgb(229, 148, 145); 
-    color:white; 
-    text-decoration: none; 
-    text-transform: uppercase; 
-    font-family: "kalam", sans-serif; 
-    border-radius: 50px;
-    margin: 30px;
+
+.navbar .form-control {
+  height: 40px;
+  margin-top: 10px;
 }
-.btn:hover{
-    transform: scale(1.2);
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: #B34D54;
 }
-.categoria, h2, h3, h1, p{
-    font-family: "kalam", sans-serif; 
-    color: #B34D54;
+
+.btn {
+  border: 0px;
+  padding: 10px;
+  background-color: #e59491;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "kalam", sans-serif;
+  border-radius: 50px;
+  margin: 30px;
 }
-.nav-link{
-    text-decoration: none;
-    color: #B34D54
+
+.btn:hover {
+  transform: scale(1.2);
 }
-.card{
-    background-color: white;
-    border-radius: 10px; 
-    padding: 50px;
-    border-style: outset;
-    display: inline-block;
+
+.categoria, h2, h3, h1, p {
+  font-family: "kalam", sans-serif;
+  color: #B34D54;
 }
-.card-img-top{
-    width: 100%; 
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+  border-style: outset;
+  display: inline-block;
 }
-.tarjeta__titulo{
-    text-align: center;
+
+.card .card-img-top {
+  width: 100%;
 }
-.card-text{
-    font-size: 20px;
+
+.card .card-text {
+  font-size: 20px;
+}
+
+.tarjeta__titulo {
+  text-align: center;
 }
 
 /*edicion del footer*/
-footer{
-    font-family: "kalam";
-    font-weight: 700;
-    color: #B34D54;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding: 10px;
-}
-footer img{
-    width: 40px;
-    padding: 5px;
-    margin: 5px;
-    
-}
-.pie{
-    display: grid;
-    background-color: white;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: 35px 35px ;
-    grid-template-areas: "contacto . redes"
-                         "contacto . redes";
-}
-.redes{
-    grid-area: redes;
-}
-.subtitulo{
-    text-align: center;
-}
-.contacto{
-    grid-area: contacto;
-    color: #D05961;
-    font-family: "kalam";
-    
+footer {
+  font-family: "kalam", sans-serif;
+  font-weight: 700;
+  color: #B34D54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
-.datos{
-    margin: 100px 500px;
-    font-family: "kalam";
-    color:#B34D54;
-    display: flex;     
-    flex-direction: column; 
-    justify-content: center;
-    height: 400px;
+footer footer img {
+  width: 40px;
+  padding: 5px;
+  margin: 5px;
 }
-.datos input:focus{
-    width: 450px;
+
+.pie {
+  display: grid;
+  background-color: white;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: 35px 35px;
+  grid-template-areas: "contacto . redes" "contacto . redes";
 }
-.datosCompra{
-    height: 500px;
+
+.pie .contacto {
+  grid-area: contacto;
+  color: #B34D54;
+  font-family: "kalam", sans-serif;
 }
-.circulo{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    animation-name: movi;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+
+.pie .redes {
+  grid-area: redes;
+}
+
+.pie .redes .subtitulo {
+  text-align: center;
+}
+
+.datos {
+  margin: 100px 500px;
+  font-family: "kalam", sans-serif;
+  color: #B34D54;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
+
+.datos .datos input:focus {
+  width: 450px;
+}
+
+.datosCompra {
+  height: 500px;
+}
+
+.circulo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  animation-name: movi;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes movi {
-    0%{
-        transform: translate(0px,0px);
-    }
-    100%{
-        transform: translate(300px,0px);
-    }
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(300px, 0px);
+  }
 }
+
 /* edición de la segunda página "compra.html"*/
-
-.promociones{
-    display: grid;
-    grid-template-columns: 30% 70% ;
-    grid-template-rows: 50px 400px 400px 400px 400px 400px 400px ;
-    grid-template-areas: "titulo  titulo"
-                         "fotoA   infoA"
-                         "usoA    usoA"
-                         "fotoB   infoB"
-                         "usoB    usoB"
-                         "fotoC   infoC"
-                         "usoC    usoC";
-    justify-items: center;
-}
-.tituloPromo{
-    grid-area: titulo;
-    font-size: 35px;
-}
-.infoLumi{
-    grid-area: fotoA;
-}
-.contenidoLumi{
-    grid-area: infoA;
-}
-.usoLumi{
-    grid-area: usoA;
-}
-.infoFacial{
-    grid-area: fotoB;
-}
-.contenidoFacial{
-    grid-area: infoB;
-}
-.usoFacial{
-    grid-area: usoB;
-}
-.infoGeles{
-    grid-area: fotoC;
-}
-.contenidoGeles{
-    grid-area: infoC;
-}
-.usoGeles{
-    grid-area: usoC;
-}
-.usoFacial, .usoGeles, .usoLumi{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contenidoLumi, .contenidoFacial, .contenidoGeles{
-    align-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-}
-.texto{
-    font-size: 30px;
-}
-.infoLumi, .infoFacial, .infoGeles{
-    display: flex;
-    justify-content: center;
-}
-.infoLumi, .infoFacial, .infoGeles img{
-    height: 80%;
-}
-.promociones h3{
-    font-size: 30px;
-    text-align: center;
-}
-.video{
-    margin-top: 50px;
-}
-.fotoProducto{
-    transition: all 5s;
-}
-.fotoProducto:hover{
-    transform: rotateY(360deg);
-}
-.videoUso{
-    transition: all 2s, width 5s;
-}
-iframe:hover{
-    width: 650px;
-    height: 300px;
+.promociones {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 50px 400px 400px 400px 400px 400px 400px;
+  grid-template-areas: "titulo  titulo" "fotoA   infoA" "usoA    usoA" "fotoB   infoB" "usoB    usoB" "fotoC   infoC" "usoC    usoC";
+  justify-items: center;
 }
 
-.botonPago, .botonRegistro, .botonSubtitulo{
-    display: flex;
-    justify-content: center;
-}
-.textoRegistro{
-    text-align: center;
-    font-size: 20px;
+.promociones .tituloPromo {
+  grid-area: titulo;
+  font-size: 35px;
 }
 
-.table{
-    font-family: "kalam", sans-serif; 
-    color: #B34D54;
-    font-size: 24px;
+.promociones .infoLumi {
+  grid-area: fotoA;
 }
+
+.promociones .contenidoLumi {
+  grid-area: infoA;
+}
+
+.promociones .usoLumi {
+  grid-area: usoA;
+}
+
+.promociones .infoFacial {
+  grid-area: fotoB;
+}
+
+.promociones .contenidoFacial {
+  grid-area: infoB;
+}
+
+.promociones .usoFacial {
+  grid-area: usoB;
+}
+
+.promociones .infoGeles {
+  grid-area: fotoC;
+}
+
+.promociones .contenidoGeles {
+  grid-area: infoC;
+}
+
+.promociones .usoGeles {
+  grid-area: usoC;
+}
+
+.promociones .usoFacial, .promociones .usoGeles, .promociones .usoLumi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promociones .usoFacial .videoUso, .promociones .usoGeles .videoUso, .promociones .usoLumi .videoUso {
+  transition: all 2s, width 5s;
+}
+
+.promociones .usoFacial iframe:hover, .promociones .usoGeles iframe:hover, .promociones .usoLumi iframe:hover {
+  width: 650px;
+  height: 300px;
+}
+
+.promociones .usoFacial h3, .promociones .usoGeles h3, .promociones .usoLumi h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.promociones .contenidoLumi, .promociones .contenidoFacial, .promociones .contenidoGeles {
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.promociones .contenidoLumi .texto, .promociones .contenidoFacial .texto, .promociones .contenidoGeles .texto {
+  font-size: 30px;
+}
+
+.promociones .infoLumi, .promociones .infoFacial, .promociones .infoGeles {
+  display: flex;
+  justify-content: center;
+}
+
+.promociones .infoLumi, .promociones .infoFacial, .promociones .infoGeles img {
+  height: 80%;
+}
+
+.promociones .infoLumi .fotoProducto, .promociones .infoFacial .fotoProducto, .promociones .infoGeles img .fotoProducto {
+  transition: all 5s;
+}
+
+.promociones .infoLumi .fotoProducto :hover, .promociones .infoFacial .fotoProducto :hover, .promociones .infoGeles img .fotoProducto :hover {
+  transform: rotateY(360deg);
+}
+
+.botonPago, .botonRegistro, .botonSubtitulo {
+  display: flex;
+  justify-content: center;
+}
+
+.textoRegistro {
+  text-align: center;
+  font-size: 20px;
+}
+
+.table {
+  font-family: "kalam", sans-serif;
+  color: #B34D54;
+  font-size: 24px;
+}
+
 /*ediciones para teléfonos */
-@media ( max-width:480px){
-    .menu{
-        height: 100%;
-        flex-direction: column;
-    }
-    .listaMenu{
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        align-items: flex-start;
-    }
-    .listaMenu li {
-        width: 100%;
-    }
-    header{
-        font-size: 15px;
-        width: 100%;
-    }
-    ul{
-        list-style: none;
-    }
-    ul li{
-        margin: 10px;
-        display: inline ;
-        position: relative;
-        align-content: center;
-    }
-    .card{
-        border-radius: 5px; 
-        padding: 25px;
-        width: 100%;
-        height: 700px;
-    }
-    .card-img-top{
-        width: 80%; 
-    }
-    p{
-        font-size: 12px ;
-    }
-    footer{
-        padding: 10px;
-    }
-    footer img{
-        padding: 5px;
-        margin: 5px;
-        display:inline-block;
-    }
-    .pie{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-        grid-template-areas: "contacto"
-                             "redes";
-    }
-    .redes{
-        grid-area: redes;
-    }
-    .subtitulo{
-        text-align: center;
-        margin: 10px;
-    }
-    .promociones{
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(10,auto);
-        grid-template-areas: "titulo"
-                             "fotoA "  
-                             "infoA"
-                             "usoA "   
-                             "fotoB "  
-                             "infoB"
-                             "usoB "   
-                             "fotoC "  
-                             "infoC"
-                             "usoC ";
-        justify-items: center;
-    }
-    .tituloPromo{
-        font-size: 15px;
-    }
-    .contenidoLumi, .contenidoFacial, .contenidoGeles{
-        width: 70%;
-        margin: 10px;
-    }
-    .texto{
-        font-size: 1rem;
-    }
-    .infoLumi, .infoFacial, .infoGeles{
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    .promociones h3{
-        font-size: 30px;
-        text-align: center;
-    }
-    .video{
-        width: 100%; 
-    }
-    .usoLumi h3, .usoFacial h3, .usoGeles h3{
-        font-size: 16px;
-        align-items: center;
-    }
-    .datos{
-        margin: 30px;
-    }
-    .datos input:focus{
-        width: 400px;
-    }
-    .tablaPago{
-        font-size: 20px;
-    }
-    .datosInscripcion{
-        height: 800px;
-    }
-}
-@media (max-width:780px){
-    .card-text{
-        font-size: 18px;
-    }
-    .datos{
-        margin: 100px;
-    }
-    .table{
-        font-size: 18px;
-        margin: 30px;
-        width: 400px;
-    }
-    .navbar{
-        width: 500px;
-    }
+@media (max-width: 480px) {
+  .menu {
+    height: 100%;
+    flex-direction: column;
+  }
+  .listaMenu {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+  }
+  .listaMenu li {
+    width: 100%;
+  }
+  header {
+    font-size: 15px;
+    width: 100%;
+  }
+  ul {
+    list-style: none;
+  }
+  ul li {
+    margin: 10px;
+    display: inline;
+    position: relative;
+    align-content: center;
+  }
+  .card {
+    border-radius: 5px;
+    padding: 25px;
+    width: 100%;
+    height: 700px;
+  }
+  .card .card-img-top {
+    width: 80%;
+  }
+  .card p {
+    font-size: 12px;
+  }
+  footer {
+    padding: 10px;
+  }
+  footer img {
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+  }
+  footer .pie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "contacto" "redes";
+  }
+  footer .redes {
+    grid-area: redes;
+  }
+  footer .redes .subtitulo {
+    text-align: center;
+    margin: 10px;
+  }
+  .promociones {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "titulo" "fotoA "   "infoA" "usoA "    "fotoB "   "infoB" "usoB "    "fotoC "   "infoC" "usoC ";
+    justify-items: center;
+  }
+  .promociones .tituloPromo {
+    font-size: 15px;
+  }
+  .promociones .contenidoLumi, .promociones .contenidoFacial, .promociones .contenidoGeles {
+    width: 70%;
+    margin: 10px;
+  }
+  .promociones .contenidoLumi .texto, .promociones .contenidoFacial .texto, .promociones .contenidoGeles .texto {
+    font-size: 1rem;
+  }
+  .promociones .infoLumi, .promociones .infoFacial, .promociones .infoGeles {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .promociones h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .promociones .video {
+    width: 100%;
+  }
+  .promociones .usoLumi h3, .promociones .usoFacial h3, .promociones .usoGeles h3 {
+    font-size: 16px;
+    align-items: center;
+  }
+  .datos {
+    margin: 30px;
+  }
+  .datos input:focus {
+    width: 400px;
+  }
+  .tablaPago {
+    font-size: 20px;
+  }
+  .datosInscripcion {
+    height: 800px;
+  }
 }
 
-
+@media (max-width: 780px) {
+  .card-text {
+    font-size: 18px;
+  }
+  .datos {
+    margin: 100px;
+  }
+  .table {
+    font-size: 18px;
+    margin: 30px;
+    width: 400px;
+  }
+  .navbar {
+    width: 500px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
