@@ -1,0 +1,35 @@
+
+footer{
+    font-family: $tipografia;
+    font-weight: 700;
+    color: $colorrosadooscuro;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+    footer img{
+        width: 40px;
+        padding: 5px;
+        margin: 5px;
+        
+    }
+}
+.pie{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 35px 35px ;
+    grid-template-areas: "contacto . redes"
+                         "contacto . redes";
+    .contacto{
+        grid-area: contacto;
+        color: $colorrosadooscuro;
+        font-family: $tipografia; 
+    }
+    .redes{
+        grid-area: redes;
+        .subtitulo{
+            text-align: center;
+        }
+    }
+}

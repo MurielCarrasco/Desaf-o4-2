@@ -1,7 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Karma:wght@300&display=swap');
-$colorrosadooscuro:  #B34D54;
-$tipografia: "kalam",sans-serif;
+@import "_variables";
+@import "_vav";
+@import "footer";
 
 *{
     margin: 0;
@@ -11,22 +12,6 @@ $tipografia: "kalam",sans-serif;
 a{
     text-decoration: none;
     color: $colorrosadooscuro;
-}
-.navbar{
-    background-color: white;
-    font-family:$tipografia; 
-    color: $colorrosadooscuro;
-    .brand{
-    width: 90px;
-    }
-    .form-control{
-    height: 40px;
-    margin-top: 10px;
-    }
-    .nav-link{
-        text-decoration: none;
-        color:$colorrosadooscuro;
-    }
 }
 .btn{
     border: 0px;
@@ -61,42 +46,6 @@ a{
 }
 .tarjeta__titulo{
     text-align: center;
-}
-
-/*edicion del footer*/
-footer{
-    font-family: $tipografia;
-    font-weight: 700;
-    color: $colorrosadooscuro;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding: 10px;
-    footer img{
-        width: 40px;
-        padding: 5px;
-        margin: 5px;
-        
-    }
-}
-.pie{
-    display: grid;
-    background-color: white;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: 35px 35px ;
-    grid-template-areas: "contacto . redes"
-                         "contacto . redes";
-    .contacto{
-        grid-area: contacto;
-        color: $colorrosadooscuro;
-        font-family: $tipografia; 
-    }
-    .redes{
-        grid-area: redes;
-        .subtitulo{
-            text-align: center;
-        }
-    }
 }
 .datos{
     margin: 100px 500px;

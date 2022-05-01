@@ -1,0 +1,16 @@
+.navbar{
+    background-color: white;
+    font-family:$tipografia; 
+    color: $colorrosadooscuro;
+    .brand{
+    width: 90px;
+    }
+    .form-control{
+    height: 40px;
+    margin-top: 10px;
+    }
+    .nav-link{
+        text-decoration: none;
+        color:$colorrosadooscuro;
+    }
+}

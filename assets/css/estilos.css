@@ -11,26 +11,6 @@ a {
   color: #B34D54;
 }
 
-.navbar {
-  background-color: white;
-  font-family: "kalam", sans-serif;
-  color: #B34D54;
-}
-
-.navbar .brand {
-  width: 90px;
-}
-
-.navbar .form-control {
-  height: 40px;
-  margin-top: 10px;
-}
-
-.navbar .nav-link {
-  text-decoration: none;
-  color: #B34D54;
-}
-
 .btn {
   border: 0px;
   padding: 10px;
