@@ -1,9 +1,71 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Karma:wght@300&display=swap");
+.navbar {
+  background-color: white;
+  font-family: "kalam", sans-serif;
+  color: #B34D54;
+}
+
+.navbar .brand {
+  width: 90px;
+}
+
+.navbar .form-control {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.navbar .nav-link {
+  text-decoration: none;
+  color: #B34D54;
+}
+
+footer {
+  font-family: "kalam", sans-serif;
+  font-weight: 700;
+  color: #B34D54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+footer footer img {
+  width: 40px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.pie {
+  display: grid;
+  background-color: white;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-rows: repeat(2 auto);
+  grid-template-areas: "contacto . redes" "contacto . redes";
+}
+
+.pie .contacto {
+  grid-area: contacto;
+  color: #B34D54;
+  font-family: "kalam", sans-serif;
+}
+
+.pie .redes {
+  grid-area: redes;
+}
+
+.pie .redes .subtitulo {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0%;
   font-family: "kalam";
+}
+
+.row {
+  margin: 0;
 }
 
 a {
@@ -52,56 +114,17 @@ a {
   text-align: center;
 }
 
-/*edicion del footer*/
-footer {
-  font-family: "kalam", sans-serif;
-  font-weight: 700;
-  color: #B34D54;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-footer footer img {
-  width: 40px;
-  padding: 5px;
-  margin: 5px;
-}
-
-.pie {
-  display: grid;
-  background-color: white;
-  grid-template-columns: 40% 20% 40%;
-  grid-template-rows: 35px 35px;
-  grid-template-areas: "contacto . redes" "contacto . redes";
-}
-
-.pie .contacto {
-  grid-area: contacto;
-  color: #B34D54;
-  font-family: "kalam", sans-serif;
-}
-
-.pie .redes {
-  grid-area: redes;
-}
-
-.pie .redes .subtitulo {
-  text-align: center;
-}
-
 .datos {
-  margin: 100px 500px;
+  margin: 0 auto;
   font-family: "kalam", sans-serif;
   color: #B34D54;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
+  width: 80%;
 }
 
-.datos .datos input:focus {
+.datos input:focus {
   width: 450px;
 }
 
@@ -131,7 +154,7 @@ footer footer img {
 .promociones {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 50px 400px 400px 400px 400px 400px 400px;
+  grid-template-rows: repeat(10, auto);
   grid-template-areas: "titulo  titulo" "fotoA   infoA" "usoA    usoA" "fotoB   infoB" "usoB    usoB" "fotoC   infoC" "usoC    usoC";
   justify-items: center;
 }
@@ -187,7 +210,10 @@ footer footer img {
   transition: all 2s, width 5s;
 }
 
-.promociones .usoFacial iframe:hover, .promociones .usoGeles iframe:hover, .promociones .usoLumi iframe:hover {
+iframe
+.promociones .usoFacial:hover, iframe
+.promociones .usoGeles:hover, iframe
+.promociones .usoLumi:hover {
   width: 650px;
   height: 300px;
 }
@@ -222,7 +248,7 @@ footer footer img {
   transition: all 5s;
 }
 
-.promociones .infoLumi .fotoProducto :hover, .promociones .infoFacial .fotoProducto :hover, .promociones .infoGeles img .fotoProducto :hover {
+.promociones .infoLumi .fotoProducto:hover, .promociones .infoFacial .fotoProducto:hover, .promociones .infoGeles img .fotoProducto:hover {
   transform: rotateY(360deg);
 }
 
@@ -276,7 +302,6 @@ footer footer img {
     border-radius: 5px;
     padding: 25px;
     width: 100%;
-    height: 700px;
   }
   .card .card-img-top {
     width: 80%;
@@ -339,9 +364,6 @@ footer footer img {
     font-size: 16px;
     align-items: center;
   }
-  .datos {
-    margin: 30px;
-  }
   .datos input:focus {
     width: 400px;
   }
@@ -357,16 +379,10 @@ footer footer img {
   .card-text {
     font-size: 18px;
   }
-  .datos {
-    margin: 100px;
-  }
   .table {
     font-size: 18px;
     margin: 30px;
     width: 400px;
-  }
-  .navbar {
-    width: 500px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
