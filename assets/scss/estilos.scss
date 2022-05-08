@@ -16,16 +16,19 @@ a{
     text-decoration: none;
     color: $colorrosadooscuro;
 }
+@mixin propiedadPrincipal($margin, $padding) {
+   padding: $padding; 
+   margin: $margin;
+}
 .btn{
     border: 0px;
-    padding: 10px; 
+    @include propiedadPrincipal(10px, 30px );
     background-color:rgb(229, 148, 145); 
     color:white; 
     text-decoration: none; 
     text-transform: uppercase; 
     font-family: $tipografia; 
     border-radius: 50px;
-    margin: 30px;
     &:hover{
     transform: scale(1.2);
     }
@@ -232,8 +235,7 @@ h2, h3, h1, p{
     footer{
         padding: 10px;
         img{
-            padding: 5px;
-            margin: 5px;
+            @include propiedadPrincipal(5px, 5px );
             display:inline-block;
         }
         .pie{

@@ -75,14 +75,14 @@ a {
 
 .btn {
   border: 0px;
-  padding: 10px;
+  padding: 30px;
+  margin: 10px;
   background-color: #e59491;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "kalam", sans-serif;
   border-radius: 50px;
-  margin: 30px;
 }
 
 .btn:hover {
