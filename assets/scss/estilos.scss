@@ -51,7 +51,7 @@ h2, h3, h1, p{
     }
 }
 .tarjeta__titulo{
-    text-align: center;
+    text-align: map-get($centrado-contenido, text-align );
 }
 .datos{
     margin: 0 auto;
@@ -143,13 +143,13 @@ h2, h3, h1, p{
             }
         h3{
             font-size: 30px;
-            text-align: center;
+            text-align: map-get($centrado-contenido, text-align );
         }
     }
     .contenidoLumi, .contenidoFacial, .contenidoGeles{
-        align-content: center;
-        flex-direction: column;
-        text-align: center;
+        align-content: map-get($centrado-contenido, align-content );
+        flex-direction: map-get($centrado-contenido, flex-direction );
+        text-align: map-get($centrado-contenido, text-align );
         padding: 10px;
         font-size: 20px;
         .texto{
@@ -178,7 +178,7 @@ h2, h3, h1, p{
     @extend .botonPago;
 }
 .textoRegistro{
-    text-align: center;
+    text-align: map-get($centrado-contenido, text-align );
     font-size: 20px;
 }
 
@@ -199,7 +199,7 @@ h2, h3, h1, p{
         height: 100%;
         justify-content: center;
         flex-direction: column;
-        text-align: center;
+        text-align: map-get($centrado-contenido, text-align );
         align-items: flex-start;
         li {
             width: 100%;
@@ -215,7 +215,7 @@ h2, h3, h1, p{
             margin: 10px;
             display: inline ;
             position: relative;
-            align-content: center;
+            align-content: map-get($centrado-contenido, align-content );
         }
     }
     .card{
@@ -246,7 +246,7 @@ h2, h3, h1, p{
         .redes{
             grid-area: redes;
             .subtitulo{
-                text-align: center;
+                text-align:map-get($centrado-contenido, text-align );
                 margin: 10px;
             }
         }
@@ -285,7 +285,7 @@ h2, h3, h1, p{
         }
         h3{
             font-size: 30px;
-            text-align: center;
+            text-align: map-get($centrado-contenido, text-align );
         }
         .video{
             width: 100%; 
