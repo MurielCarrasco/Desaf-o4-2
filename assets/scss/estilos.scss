@@ -30,9 +30,12 @@ a{
     transform: scale(1.2);
     }
 }
-.categoria, h2, h3, h1, p{
+.categoria{
     font-family:$tipografia; 
     color: $colorrosadooscuro;
+}
+h2, h3, h1, p{
+    @extend .categoria;
 }
 .card{
     background-color: white;
@@ -52,8 +55,7 @@ a{
 }
 .datos{
     margin: 0 auto;
-    font-family: $tipografia;
-    color:$colorrosadooscuro;
+    @extend .categoria;
     display: flex;     
     flex-direction: column; 
     justify-content: center;
@@ -168,9 +170,12 @@ a{
         }
     }
 }
-.botonPago, .botonRegistro, .botonSubtitulo{
+.botonPago{
     display: flex;
     justify-content: center;
+}
+.botonRegistro, .botonSubtitulo{
+    @extend .botonPago;
 }
 .textoRegistro{
     text-align: center;
