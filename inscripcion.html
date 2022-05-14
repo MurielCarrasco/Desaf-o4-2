@@ -42,29 +42,31 @@
 
     <form method="post" class="datos datosInscripcion">
         <label for="Nombre">Nombre</label>
-        <input type="text" name="Nombre">
+        <input type="text" name="Nombre" class="form-control">
         <label for="Apellido">Apellido</label>
-        <input type="text" name="Apellido">
+        <input type="text" name="Apellido" class="form-control">
         <label for="Dirección">Dirección</label>
-        <input type="text" name="Dirección">
+        <input type="text" name="Dirección" class="form-control">
         <label for="Comuna">Comuna</label>
-        <input type="text" name="Comuna">
+        <input type="text" name="Comuna" class="form-control">
         <label for="Región">Región</label>
-        <input type="text" name="Región">
+        <input type="text" name="Región" class="form-control">
         <label for="mail">Mail</label>
-        <input type="email" name="Mail">
+        <input type="email" name="Mail" class="form-control">
         <label for="Contraseña">Contraseña</label>
-        <input type="password" name="Contraseña">
+        <input type="password" name="Contraseña" class="form-control">
 
-        <label for="Socio">Socio</label>
-        <input type="radio" name="cuenta" value="Socio" id="Socio">
-        <label for="Cliente">Cliente</label>
-        <input type="radio" name="cuenta" value="Cliente" id="Cliente">
-
-        <p>Acepta términos y condiciones</p>
-        <input type="checkbox" name="acepta" value="1"/>
-
-        <button class="btn">Crear cuenta</button>
+        <div class="my-2">
+          <label for="Socio">Socio</label>
+          <input type="radio" name="cuenta" value="Socio" id="Socio">
+          <label for="Cliente">Cliente</label>
+          <input type="radio" name="cuenta" value="Cliente" id="Cliente">
+        </div>
+        <div class="d-flex align-item-center mb-2">
+          <input type="checkbox" name="acepta" value="1"/>
+          <p class="mb-0 px-1">Acepta términos y condiciones</p>
+        </div>
+        <button class="btn boton my-2">Crear cuenta</button>
     </form>
 
 
@@ -78,12 +80,14 @@
         
         <div class="redes">
             <h2 class="subtitulo"> Conectate</h2>
-            <a href="https://www.facebook.com"> <img src="./assets/img/rrss/Facebook.jpg" alt="Logo Facebook"></a>
-            <a href="https://www.instagram.com"> <img src="./assets/img/rrss/Instagram.jpg" alt="Logo Instagram"> </a>
-            <a href="https://www.pinterest.cl"> <img src="./assets/img/rrss/Pinterest.jpg" alt="Logo Pinterest"></a>
-            <a href="https://www.twitter.com"> <img src="./assets/img/rrss/Twitter.jpg" alt="Logo Twitter"></a>
-            <a href="https://www.youtube.com"> <img src="./assets/img/rrss/Youtube.jpg" alt="Logo Youtube"></a>
-        </div>
+            <div>
+              <a href="https://www.facebook.com"> <img src="./assets/img/rrss/Facebook.jpg" alt="Logo Facebook"></a>
+              <a href="https://www.instagram.com"> <img src="./assets/img/rrss/Instagram.jpg" alt="Logo Instagram"> </a>
+              <a href="https://www.pinterest.cl"> <img src="./assets/img/rrss/Pinterest.jpg" alt="Logo Pinterest"></a>
+              <a href="https://www.twitter.com"> <img src="./assets/img/rrss/Twitter.jpg" alt="Logo Twitter"></a>
+              <a href="https://www.youtube.com"> <img src="./assets/img/rrss/Youtube.jpg" alt="Logo Youtube"></a>
+            </div>
+          </div>
     </footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>

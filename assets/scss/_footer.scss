@@ -18,7 +18,7 @@ footer{
     display: grid;
     background-color: white;
     grid-template-columns: 40% 20% 40%;
-    grid-template-rows: repeat(2 auto) ;
+    grid-template-rows: repeat(2, auto) ;
     grid-template-areas: "contacto . redes"
                          "contacto . redes";
     .contacto{
@@ -28,6 +28,9 @@ footer{
     }
     .redes{
         grid-area: redes;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .subtitulo{
             text-align: center;
         }

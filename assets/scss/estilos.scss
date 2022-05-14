@@ -22,7 +22,7 @@ a{
 }
 .btn{
     border: 0px;
-    @include propiedadPrincipal(10px, 30px );
+    @include propiedadPrincipal(0, 1rem);
     background-color:rgb(229, 148, 145); 
     color:white; 
     text-decoration: none; 
@@ -31,12 +31,15 @@ a{
     font-size: 16px;
     font-family: $tipografia; 
     border-radius: 40px;
-    width: 120px;
-    height: 40px ;
     &:hover{
     transform: scale(1.2);
     background-color: $colorrosadooscuro;
+    border-color: $colorrosadooscuro;
     }
+}
+.boton{
+    width: 50px;
+    margin: 0 auto;
 }
 .categoria{
     font-family:$tipografia; 
@@ -50,15 +53,11 @@ h2, h3, h1, p{
     @extend .categoria;
 }
 .card{
-    background-color: white;
     border-radius: 10px; 
-    padding: 50px;
-    border-style: outset;
-    display: inline-block;
-    margin: 30px;
+    padding: 2rem;
+    margin: 1rem;
     .card-img-top{
         width: 200px;
-
     }
     .card-text{
         font-size: 20px;
@@ -67,26 +66,32 @@ h2, h3, h1, p{
 .tarjeta__titulo{
     text-align: map-get($centrado-contenido, text-align );
 }
+.main-registro{
+    overflow: hidden;
+}
 .datos{
     margin: 0 auto;
     @extend .categoria;
     display: flex;     
     flex-direction: column; 
     justify-content: center;
-    width: 80%;
+    max-width: 500px;
+    padding: .5rem;
     input:focus{
-        width: 450px;
+        border:2px solid $colorrosadooscuro;
     }
+}
+.form-control:focus{
+    box-shadow: none;
 }
 .datosCompra{
     height: 500px;
 }
 .circulo{
-    width: 40px;
     height: 40px;
     border-radius: 50px;
     animation-name: movi;
-    animation-duration: 3s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
 }
 
@@ -95,7 +100,7 @@ h2, h3, h1, p{
         transform: translate(0px,0px);
     }
     100%{
-        transform: translate(300px,0px);
+        transform: translate(100%,0px);
     }
 }
 /* edición de la segunda página "compra.html"*/
@@ -239,7 +244,6 @@ h2, h3, h1, p{
         display: flex;
         justify-content: center;
         width: 100%; 
-        height: 400px;
         .card-img-top{
             width: 80%; 
         }
@@ -253,7 +257,7 @@ h2, h3, h1, p{
     footer{
         padding: 10px;
         img{
-            @include propiedadPrincipal(5px, 5px );
+            @include propiedadPrincipal(5px, 0);
             display:inline-block;
         }
         .pie{
@@ -316,9 +320,7 @@ h2, h3, h1, p{
         }
     }
     .datos{
-        input:focus{
-            width: 400px;
-        }
+        max-width: 100%;
     }
     .tablaPago{
         font-size: 20px;
