@@ -16,6 +16,25 @@ a{
     text-decoration: none;
     color: $colorrosadooscuro;
 }
+
+/*aquí quise hacer la animación que todo el contenido ,ya sea, textos , card, etc... no se vieras y aparecieran desde un lado al centro*/
+.cuerpo{
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: translate()  
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*la edición debería terminar acá pero no me resultó*/
+
+
 @mixin propiedadPrincipal($margin, $padding) {
    padding: $padding; 
    margin: $margin;
@@ -28,7 +47,7 @@ a{
     text-decoration: none; 
     text-transform: uppercase; 
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-family: $tipografia; 
     border-radius: 40px;
     &:hover{
