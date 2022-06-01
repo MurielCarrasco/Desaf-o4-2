@@ -20,6 +20,10 @@
   color: #B34D54;
 }
 
+.navbar .button {
+  padding: 0 1rem;
+}
+
 footer {
   font-family: "kalam", sans-serif;
   font-weight: 700;
@@ -40,7 +44,7 @@ footer footer img {
   display: grid;
   background-color: white;
   grid-template-columns: 40% 20% 40%;
-  grid-template-rows: repeat(2 auto);
+  grid-template-rows: auto auto;
   grid-template-areas: "contacto . redes" "contacto . redes";
 }
 
@@ -52,6 +56,9 @@ footer footer img {
 
 .pie .redes {
   grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pie .redes .subtitulo {
@@ -73,25 +80,47 @@ a {
   color: #B34D54;
 }
 
+/*aquí quise hacer la animación que todo el contenido ,ya sea, textos , card, etc... no se vieras y aparecieran desde un lado al centro*/
+.cuerpo {
+  animation-name: aparecer;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform: translate();
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*la edición debería terminar acá pero no me resultó*/
 .btn {
   border: 0px;
-  padding: 30px;
-  margin: 10px;
+  padding: 1rem;
+  margin: 0;
   background-color: #e59491;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "kalam", sans-serif;
   border-radius: 40px;
-  width: 120px;
-  height: 40px;
 }
 
 .btn:hover {
   transform: scale(1.2);
   background-color: #B34D54;
+  border-color: #B34D54;
+}
+
+.boton {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .categoria, h2, h3, h1, p, .datos {
@@ -105,12 +134,9 @@ a {
 }
 
 .card {
-  background-color: white;
   border-radius: 10px;
-  padding: 50px;
-  border-style: outset;
-  display: inline-block;
-  margin: 30px;
+  padding: 2rem;
+  margin: 1rem;
 }
 
 .card .card-img-top {
@@ -125,16 +151,25 @@ a {
   text-align: center;
 }
 
+.main-registro {
+  overflow: hidden;
+}
+
 .datos {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  max-width: 500px;
+  padding: .5rem;
 }
 
 .datos input:focus {
-  width: 450px;
+  border: 2px solid #B34D54;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }
 
 .datosCompra {
@@ -142,11 +177,10 @@ a {
 }
 
 .circulo {
-  width: 40px;
   height: 40px;
   border-radius: 50px;
   animation-name: movi;
-  animation-duration: 3s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
 }
 
@@ -155,7 +189,7 @@ a {
     transform: translate(0px, 0px);
   }
   100% {
-    transform: translate(300px, 0px);
+    transform: translate(100%, 0px);
   }
 }
 
@@ -163,7 +197,7 @@ a {
 .promociones {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: repeat(10, auto);
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
   grid-template-areas: "titulo  titulo" "fotoA   infoA" "usoA    usoA" "fotoB   infoB" "usoB    usoB" "fotoC   infoC" "usoC    usoC";
   justify-items: center;
 }
@@ -311,7 +345,6 @@ iframe .promociones .usoFacial:hover, iframe .promociones .usoGeles:hover, ifram
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 400px;
   }
   .card .card-img-top {
     width: 80%;
@@ -326,15 +359,9 @@ iframe .promociones .usoFacial:hover, iframe .promociones .usoGeles:hover, ifram
     padding: 10px;
   }
   footer img {
-    padding: 5px;
+    padding: 0;
     margin: 5px;
     display: inline-block;
-  }
-  footer .pie {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: "contacto" "redes";
   }
   footer .redes {
     grid-area: redes;
@@ -342,6 +369,12 @@ iframe .promociones .usoFacial:hover, iframe .promociones .usoGeles:hover, ifram
   footer .redes .subtitulo {
     text-align: center;
     margin: 10px;
+  }
+  .pie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "contacto" "redes";
   }
   .promociones {
     display: grid;
@@ -377,8 +410,8 @@ iframe .promociones .usoFacial:hover, iframe .promociones .usoGeles:hover, ifram
     font-size: 16px;
     align-items: center;
   }
-  .datos input:focus {
-    width: 400px;
+  .datos {
+    max-width: 100%;
   }
   .tablaPago {
     font-size: 20px;
