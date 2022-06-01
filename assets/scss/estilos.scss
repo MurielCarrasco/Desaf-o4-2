@@ -20,9 +20,9 @@ a{
 /*aquí quise hacer la animación que todo el contenido ,ya sea, textos , card, etc... no se vieras y aparecieran desde un lado al centro*/
 .cuerpo{
     animation-name: aparecer;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    transform: translate()  
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+    transform: translate(30px, 0px)  
 }
 @keyframes aparecer{
     0%{
